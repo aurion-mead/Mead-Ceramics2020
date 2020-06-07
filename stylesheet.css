@@ -26,10 +26,10 @@ head{
 nav{
   width: 100%;
   height: 50px;
-  position: sticky;
-  background-color: #FFFFFFS;
+  position: fixed;
+  background-color: #3a3436;
   top: 0;
-  left: 999;
+  left: 999; 
 }
 
 nav>ul{
@@ -50,7 +50,7 @@ nav>ul>li{
 
 nav>ul>li>a{
   display: block;
-  color: #cc0000;
+  color: #CC2E2E    ;
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
@@ -59,9 +59,8 @@ nav>ul>li>a{
 }
 
 nav>ul>li>a:hover{
-  background-color: #f2f1ef;
+  background-color: #827f7f;
   padding: 5px;
-  transition: ease-in;
 }
   
 
@@ -86,7 +85,7 @@ footer {
 }
 
 html{
-    background-color: #FFFFFF;
+    background-color: #3a3436;
     text-align: center;
 }
 
@@ -111,21 +110,36 @@ h2, h3 {
   padding: 20px 5px;
 }
 
+h4 {
+    text-align: center;
+    
+}
 
 
 p{
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
   padding: 20px;
 }
 
 
-icon8link,a{
-  color: #FFFFFF;
-}
 
 logos,a{
+  color: #3a3436;
   padding: 10px;
 }
+
+.shamelessplug {
+color: #FFFFFF;
+    padding: 5px;
+}
   
+
+
+
+
+
+
 /* CONTACT FORM STYLING*/
   
 contact-title{
@@ -189,11 +203,11 @@ form .submit:hover {
   
 div.gallery {
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #777;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #ccc;
 }
 
 div.gallery img {
@@ -204,6 +218,7 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  color: #FFFFFF;
 }
 
 * {
@@ -214,20 +229,23 @@ div.desc {
   padding: 10px 6px;
   float: left;
   width: 24.99999%;
+  max-width: 100%;
+  height: auto;
 }
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
 }
 
 @media only screen and (max-width: 500px) {
   .responsive {
-    width: 100%;
+
+    margin: 6px 0;
   }
 }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 50%;
+      }
+    }
 
 .clearfix:after {
   content: "";
@@ -244,10 +262,16 @@ section:after {
 }
 
 
+.poster1 {
+    text-align: left; 
+    padding: 0 50px 0 50px;
+}
+
+
 
 .img1 {
   /* The image used */
-  background-image: url("Images and Info/fog.jpg");
+  background-image: url("Images%20and%20Info/fog.png");
 }
 
 .img2 {
@@ -271,4 +295,11 @@ section:after {
 
 /* End Index img styling*/
 
+
+@media only screen and (max-width: 480px) {
+  body {
+
+    margin: auto;
+  }
+}
 
