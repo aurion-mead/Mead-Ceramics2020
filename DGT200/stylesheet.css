@@ -21,6 +21,9 @@ head{
 
 
 
+
+
+
 /* Nav Styling*/
 
 nav{
@@ -67,15 +70,24 @@ nav>ul>li>a:hover{
   
 /*End Nav Styling*/
 
+p>a {
+    color: white;
+    
+}
 
-
+p>a:hover {
+    color: aqua;
+}
 
 body{
  padding: 0;
  margin: 0;
 }
 
-
+.wrap {
+    position: relative;
+    min-height: 100%;
+}
 
 
 footer {
@@ -83,6 +95,8 @@ footer {
   text-align: center;
   color: black;
 }
+
+
 
 html{
     background-color: #3a3436;
@@ -111,7 +125,10 @@ h2, h3 {
 }
 
 h4 {
+    font-size: 25px;
+    color: white;
     text-align: center;
+    padding: 5px;
     
 }
 
@@ -124,19 +141,35 @@ p{
 
 
 
-logos,a{
-  color: #3a3436;
-  padding: 10px;
-}
 
 .shamelessplug {
-color: #FFFFFF;
+color: #FFFFFF  ;
     padding: 5px;
 }
   
+.icons {
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+  
+}
 
+.icons.instagram {
+    color: white;
+    font-size: 50px;
+    padding: 5px;
+    border-radius: 10px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949   45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    }
 
-
+.pinterest {
+    background-color: white;
+    color: #cb2027;
+    font-size: 50px;
+    padding: 5px;
+    border-radius: 10px;
+}
 
 
 
@@ -197,8 +230,11 @@ form .submit:hover {
 
 /*END CONTACT FORM STYLING*/
 
+.TextWrap {
+text-align: center;
+}
 
-  /* Styling for img gallery */
+/* Styling for img gallery */
   
   
 div.gallery {
@@ -262,12 +298,7 @@ section:after {
 }
 
 
-.poster1 {
-    text-align: left; 
-    padding: 0 50px 0 50px;
-}
-
-
+/*Index images and  styling*/
 
 .img1 {
   /* The image used */
@@ -283,17 +314,15 @@ section:after {
   /* The image used */
   background-image: url("Images and Info/navajo.jpg");
 }
-/*Index img styling*/
 
 .img1, .img2, .img3 {
-
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* End Index img styling*/
+/* End Index images and styling*/
 
 
 @media only screen and (max-width: 480px) {
